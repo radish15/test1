@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script type="text/javascript">
+	function show_confirm() 
+	{ 
+		var r=confirm("你确定你是憨憨吗？"); 
+		if (r==true) { 
+	 		alert("没错!"); 
+		} 
+		else { 
+		 	alert("你应该重新想想！"); 
+		 	show_confirm();
+		} 
+	 } 
+</script>
+<body>
+	<input type="button" value="问你个问题！" onclick="show_confirm()">
+</body>
+</html>
